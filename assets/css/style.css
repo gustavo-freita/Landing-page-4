@@ -40,6 +40,7 @@ li a {
     font-size: 20px;
     font-weight: 500;
     color: #fff;
+    width: 200%;text-shadow: 5px 1px 8px #000;
     text-decoration: none;
 }
 
@@ -52,6 +53,7 @@ li a {
 .icons i {
     font-size: 20px;
     color: #fff;
+    width: 200%;text-shadow: 5px 1px 8px #000;
 }
 
 main {
@@ -78,4 +80,9 @@ main {
     font-size: 95px;
     width: 200%;text-shadow: 5px 1px 8px #000;
     color: #F96110;
+}
+
+main img {
+    width: 400px;
+    filter: drop-shadow(0 0 20px #000);
 }
