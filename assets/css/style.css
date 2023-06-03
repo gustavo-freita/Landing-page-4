@@ -82,6 +82,21 @@ main {
     color: #F96110;
 }
 
+.cont p {
+    width: 600px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cont button {
+    padding: 10px 80px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 main img {
     width: 400px;
     filter: drop-shadow(0 0 20px #000);
