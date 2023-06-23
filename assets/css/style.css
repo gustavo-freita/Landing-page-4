@@ -112,7 +112,9 @@ main .lata {
     margin-bottom: 100px;
     margin-right: 30px;
     filter: drop-shadow(0 0 20px #000);
-    rotate: 15deg;
+    animation: lata 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 
 .imagens .img01 {
@@ -122,6 +124,9 @@ main .lata {
     top: 80px;
     filter: blur(1px);
     z-index: -1;
+    animation: image01 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 
 .imagens .img02 {
@@ -129,15 +134,20 @@ main .lata {
     width: 650px;
     left: 780px;
     top: 50px;
-    rotate: 50deg;
     z-index: -2;
+    animation: image02 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 
 .imagens .img03 {
     position: absolute;
     width: 80px;
-    left: 1005px;
-    top: 392px;
+    left: 1018px;
+    top: 385px;
+    animation: lata 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 
 .imagens .img04 {
@@ -147,15 +157,11 @@ main .lata {
     left: 600px;
     top: 500px;
     filter: blur(2px);
+    animation: image01 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 
-.imagens .img05 {
-    position: absolute;
-    width: 70px;
-    left: 1000px;
-    top: 80px;
-    rotate: -100deg;
-}
 
 .imagens .fundo-cor {
     width: 600px;
@@ -212,3 +218,32 @@ main .lata {
       transform-opacity: 1;
     }
   }
+
+@keyframes image01 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes image02 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    rotate: 50deg;
+  }
+}
+
+@keyframes lata {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    rotate: 15deg;
+  }
+}
