@@ -81,6 +81,7 @@ main {
     font-size: 100px;
     font-weight: 800;
     height: 122px;
+    animation: apresentacao 1s ease forwards;
 }
 
 .cont h2 {
@@ -88,6 +89,7 @@ main {
     width: 200%;
     text-shadow: 5px 1px 8px #000;
     color: #F96110;
+    animation: apresentacao 1s ease forwards;
 }
 
 .cont p {
@@ -95,6 +97,7 @@ main {
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 500;
+    animation: logo 1s ease forwards;
 }
 
 .cont button {
@@ -105,6 +108,8 @@ main {
     font-weight: 500;
     background: rgb(236,87,1);
     background: linear-gradient(149deg, rgba(236,87,1,1) 44%, rgba(249,255,0,1) 100%);
+    animation: botao 1s ease forwards;
+    cursor: pointer;
 }
 
 main .lata {
