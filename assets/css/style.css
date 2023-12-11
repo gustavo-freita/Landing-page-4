@@ -21,8 +21,9 @@ ul, li, a {
   text-decoration: none;
 }
 
-a {
+a, button {
   font-size: 1.6rem;
+  color: #fff;
 }
 
 header {
@@ -40,5 +41,25 @@ header {
   display: flex;
   align-items: center;
   gap: 5.5rem
+}
+
+.container ul li, .contact {
+  display: flex;
+  align-items: center;
+}
+
+.container ul li .ativo {
+  margin: 0 .9rem;
+}
+
+.contact button {
+  background: none;
+  border: none;
+  margin: 0 .9rem;
+}
+
+.contact i {
+  color: #fff;
+  font-size: 2rem;
 }
 
