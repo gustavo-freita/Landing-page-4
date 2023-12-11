@@ -6,249 +6,39 @@
 }
 
 body {
-    background-color: #f96110;
+    background: rgb(44,1,45);
+    background: radial-gradient(circle, rgba(44,1,45,1) 0%, rgba(77,5,71,1) 100%);
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  padding: 2rem;
 }
 
-nav {
-    display: flex;
-    gap: 25px;
-    animation: logo 2s ease forwards;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 10rem;
 }
 
-nav img {
-    width: 150px;
-    animation: botao 2s ease forwards;
+.container ul {
+  display: flex;
+  align-items: center;
+  gap: 5.5rem
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
-li {
-    list-style: none;
-}
-
-li a {
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    width: 200%;text-shadow: 5px 1px 8px #000;
-    text-decoration: none;
-}
-
-.icons {
-    display: flex;
-    gap: 20px;
-    margin-right: 80px;
-    animation: cabecalho 2s ease forwards;
-}
-
-.icons i {
-    font-size: 20px;
-    color: #fff;
-    width: 200%;text-shadow: 5px 1px 8px #000;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100vh;
-}
-
-.cont {
-    height: 65%;
-    width: 50%;
-    margin-bottom: 130px;
-    margin-right: 200px;
-    z-index: -1000;
-}
-
-.cont h1 {
-    font-size: 100px;
-    font-weight: 800;
-    height: 122px;
-    animation: apresentacao 1s ease forwards;
-}
-
-.cont h2 {
-    font-size: 95px;
-    width: 200%;
-    text-shadow: 5px 1px 8px #000;
-    color: #F96110;
-    animation: apresentacao 1s ease forwards;
-}
-
-.cont p {
-    width: 600px;
-    margin-bottom: 25px;
-    font-size: 18px;
-    font-weight: 500;
-    animation: logo 1s ease forwards;
-}
-
-.cont button {
-    padding: 10px 80px;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    background: rgb(236,87,1);
-    background: linear-gradient(149deg, rgba(236,87,1,1) 44%, rgba(249,255,0,1) 100%);
-    animation: botao 1s ease forwards;
-    cursor: pointer;
-}
-
-main .lata {
-    width: 300px;
-    margin-bottom: 100px;
-    margin-right: 30px;
-    filter: drop-shadow(0 0 20px #000);
-    animation: lata 1s ease forwards;
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-.imagens .img01 {
-    position: absolute;
-    width: 380px;
-    left: 900px;
-    top: 80px;
-    filter: blur(1px);
-    z-index: -1;
-    animation: image01 1s ease forwards;
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-.imagens .img02 {
-    position: absolute;
-    width: 650px;
-    left: 780px;
-    top: 50px;
-    z-index: -2;
-    animation: image02 1s ease forwards;
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-.imagens .img03 {
-    position: absolute;
-    width: 80px;
-    left: 1018px;
-    top: 385px;
-    animation: lata 1s ease forwards;
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-.imagens .img04 {
-    position: absolute;
-    width: 250px;
-    rotate: 180deg;
-    left: 600px;
-    top: 500px;
-    filter: blur(2px);
-    animation: image01 1s ease forwards;
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-
-.imagens .fundo-cor {
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    left: 780px;
-    top: 70px;
-    z-index: -3;
-    border-radius: 80%;
-    background-color: rgb(246, 217, 0, 0.5);
-    filter: blur(100px);
-}
-
-@keyframes logo {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes cabecalho {
-    0% {
-      transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes apresentacao {
-    0% {
-      transform: translateY(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      transform-opacity: 1;
-    }
-  }
-  
-  @keyframes botao {
-    0% {
-      transform: translateY(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      transform-opacity: 1;
-    }
-  }
-
-@keyframes image01 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes image02 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    rotate: 50deg;
-  }
-}
-
-@keyframes lata {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    rotate: 15deg;
-  }
-}
